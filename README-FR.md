@@ -1,6 +1,6 @@
 # Atelier : Création d'une API avec Express pour la gestion de pistes et d'albums 🎵
 
-[⬅ English version](./README)
+[⬅ English version](./)
 
 ## Objectif
 Apprendre à créer une API REST simple avec Express.js en implémentant progressivement les fonctionnalités CRUD (Create, Read, Update, Delete). Ce projet se fera dans un unique fichier (index.js) pour simplifier la prise en main. L’objectif est aussi d’encourager l’autonomie en consultant la documentation officielle.
