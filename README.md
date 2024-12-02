@@ -48,11 +48,18 @@ node --watch index.js
 
 ### Goal: Implement the following routes:
 
-GET /tracks: Get all tracks.
-GET /tracks/:id: Get a track by its ID.
-POST /tracks: Create a new track.
-PUT /tracks/:id: Modify an existing track.
-DELETE /tracks/:id: Delete a track.
+- GET /tracks: Get all tracks.
+- GET /tracks/:id: Get a track by its ID.
+- POST /tracks: Create a new track.
+- PUT /tracks/:id: Modify an existing track.
+- DELETE /tracks/:id: Delete a track.
+
+### Rules :
+
+- :white_check_mark: Response bodies should be JSON.
+- :white_check_mark: Request bodies should be JSON.
+- :white_check_mark: `PUT` and `DELETE` request should return `204 no content`.
+- :white_check_mark: `POST` request should return `201 created` with the associated created resource.
 
 ### Steps:
 
@@ -75,10 +82,10 @@ See the documentation on routes:
 
 ### Tips:
 
-For GET /tracks: Return the full list with res.json(tracks).
-For GET /tracks/:id: Use req.params to retrieve the ID and look up the corresponding track in the array.
-For POST /tracks: Add a track to the array and handle the data sent by the client via req.body.
-For PUT /tracks/:id and DELETE /tracks/:id, update or delete a track based on the ID.
+- For GET /tracks: Return the full list with res.json(tracks).
+- For GET /tracks/:id: Use req.params to retrieve the ID and look up the corresponding track in the array.
+- For POST /tracks: Add a track to the array and handle the data sent by the client via req.body.
+- For PUT /tracks/:id and DELETE /tracks/:id, update or delete a track based on the ID.
 
 ### Highlights:
 
@@ -89,11 +96,11 @@ Enable express.json() middleware to read JSON data from request bodies.
 
 ### Goal: Implement CRUD functionality for albums:
 
-GET /albums: Get all albums.
-GET /albums/:id: Get an album by its ID.
-POST /albums: Create a new album.
-PUT /albums/:id: Edit an existing album.
-DELETE /albums/:id: Delete an album.
+- GET /albums: Get all albums.
+- GET /albums/:id: Get an album by its ID.
+- POST /albums: Create a new album.
+- PUT /albums/:id: Edit an existing album.
+- DELETE /albums/:id: Delete an album.
 
 ### Steps:
 
