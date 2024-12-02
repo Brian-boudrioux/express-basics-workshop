@@ -50,11 +50,18 @@ node --watch index.js
 
 ### Objectif : Implémentez les routes suivantes :
 
-GET /tracks : Récupère toutes les pistes.
-GET /tracks/:id : Récupère une piste par son ID.
-POST /tracks : Crée une nouvelle piste.
-PUT /tracks/:id : Modifie une piste existante.
-DELETE /tracks/:id : Supprime une piste.
+- GET /tracks : Récupère toutes les pistes.
+- GET /tracks/:id : Récupère une piste par son ID.
+- POST /tracks : Crée une nouvelle piste.
+- PUT /tracks/:id : Modifie une piste existante.
+- DELETE /tracks/:id : Supprime une piste.
+
+### Règles :
+
+- :white_check_mark : les corps de réponse doivent être JSON.
+- :white_check_mark : les corps de requête doivent être JSON.
+- :white_check_mark : les requêtes `PUT` et `DELETE` doivent renvoyer `204 no content`.
+- :white_check_mark : la requête `POST` doit renvoyer `201 created` avec la ressource créée associée.
 
 ### Étapes :
 
@@ -77,10 +84,10 @@ Consultez la documentation sur les routes :
 
 ### Conseils :
 
-Pour GET /tracks : Retournez la liste complète avec res.json(tracks).
-Pour GET /tracks/:id : Utilisez req.params pour récupérer l’ID et recherchez la piste correspondante dans le tableau.
-Pour POST /tracks : Ajoutez une piste au tableau et gérez les données envoyées par le client via req.body.
-Pour PUT /tracks/:id et DELETE /tracks/:id, mettez à jour ou supprimez une piste en fonction de l'ID.
+- Pour GET /tracks : Retournez la liste complète avec res.json(tracks).
+- Pour GET /tracks/:id : Utilisez req.params pour récupérer l’ID et recherchez la piste correspondante dans le tableau.
+- Pour POST /tracks : Ajoutez une piste au tableau et gérez les données envoyées par le client via req.body.
+- Pour PUT /tracks/:id et DELETE /tracks/:id, mettez à jour ou supprimez une piste en fonction de l'ID.
 
 ### Points importants :
 
@@ -91,11 +98,11 @@ Activez le middleware express.json() pour lire les données JSON du corps des re
 
 ### Objectif : Implémentez les fonctionnalités CRUD pour les albums :
 
-GET /albums : Récupère tous les albums.
-GET /albums/:id : Récupère un album par son ID.
-POST /albums : Crée un nouvel album.
-PUT /albums/:id : Modifie un album existant.
-DELETE /albums/:id : Supprime un album.
+- GET /albums : Récupère tous les albums.
+- GET /albums/:id : Récupère un album par son ID.
+- POST /albums : Crée un nouvel album.
+- PUT /albums/:id : Modifie un album existant.
+- DELETE /albums/:id : Supprime un album.
 
 ### Étapes :
 
